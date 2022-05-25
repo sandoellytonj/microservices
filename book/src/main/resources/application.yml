@@ -10,6 +10,15 @@ resilience4j:
       foo-bar:
         max-attempts: 5
         wait-duration: 1s
+  ratelimiter:
+    instances:
+      foo-bar:
+        limit-for-period: 2
+        limit-refresh-period: 10
+  bulkhead:
+    instances:
+      default:
+        max-concurrent-calls: 10
 spring:
   application:
     name: book-service
