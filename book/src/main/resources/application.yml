@@ -9,6 +9,7 @@ resilience4j:
     instances:
       foo-bar:
         max-attempts: 5
+        wait-duration: 1s
 spring:
   application:
     name: book-service
