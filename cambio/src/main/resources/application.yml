@@ -18,3 +18,6 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+springdoc:
+  api-docs:
+    path: cambio-service/v3/api-docs
